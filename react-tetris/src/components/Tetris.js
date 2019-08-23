@@ -70,7 +70,7 @@ const Tetris = () => {
         drop();
     };
 
-    // const hardDropPlayer = () => {
+    const hardDropPlayer = () => {
     //     console.log(drop())
     //     console.log(drop())
     //     console.log(drop())
@@ -103,7 +103,7 @@ const Tetris = () => {
     // 	// 	// 	break;
     // 	// 	// }
     // 	// }
-    // };
+    };
 
     const move = ({ keyCode }) => {
         if (!gameOver) {
@@ -116,9 +116,9 @@ const Tetris = () => {
             } else if (keyCode === 38) {
                 playerRotate(stage, 1);
             }
-            // else if (keyCode === 32) {
-            // 	hardDropPlayer();
-            // }
+            else if (keyCode === 32) {
+            	hardDropPlayer();
+            }
         }
     };
 
