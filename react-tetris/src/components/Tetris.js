@@ -46,7 +46,6 @@ const Tetris = () => {
 
         if (!checkCollision(player, stage, { x: 0, y: 1 })) {
             updatePlayerPos({ x: 0, y: 1, collided: false });
-
         } else {
             if (player.pos.y < 1) {
                 console.log('GAME OVER');
@@ -71,38 +70,7 @@ const Tetris = () => {
     };
 
     const hardDropPlayer = () => {
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     console.log(drop())
-    //     // console.log(drop())
-    //     try{drop()} catch{
-    //         console.log("drop error")
-    //     }
-    //     try{drop()} catch{
-    //         console.log("drop error")
-    //     }
-    // 	// var i;
-    // 	// for (i = 0; i < 30; i++) {
-    //     //     console.log(drop())
-    // 	// 	// if (drop()) {
-    //     //     //     console.log('done dropping')
-    // 	// 	// 	break;
-    // 	// 	// }
-    // 	// }
+
     };
 
     const move = ({ keyCode }) => {
@@ -117,7 +85,7 @@ const Tetris = () => {
                 playerRotate(stage, 1);
             }
             else if (keyCode === 32) {
-            	hardDropPlayer();
+                hardDropPlayer();
             }
         }
     };
